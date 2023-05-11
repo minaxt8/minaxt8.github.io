@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> hello world </h1> 
-</body>
+<html>
+    <head>
+    <link href="styles/styles.css" rel="stylesheet" />
+        <title>Kamarka Store - Our Story </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+          <header>
+            <nav>
+                <a href="#">Our Collections 
+                    <img class="navicons" src="images/pampas grass collections.jpg" />         
+            <a  href="#">Collaborations 
+                <img class="navicons" src="images/influencer 2.jpg" />
+             <a href="#">Subscription Models
+                <img class="navicons" src="images/subscribeJ.jpg" />
+            <a href="#">Our Story 
+                <img class="navicons" src="images/ourstory.jpg" />
+            </nav>
+        </header>
+<section class="intro">
+  <p> Come discover our journey with us </p>
+</section>
+             
+
+              <section class="behind"> 
+                <h1> Who is behind Kamarka? </h1>
+                <p> We are two Bulgarians living in London. The idea to find Kamarka came to us spontaneously. We are increasingly thinking about sustanability, but are also home decor afficionados. We wanted to promote both and in a way make our beliefs accessible to everyone in the shape of delicate dry floral arrangements!  </p>
+                <p class="involvement"> Disclaimer: I am not involved in this business, but for the purposes of this website and easiness of completion, I have included pictures of myself and one of the founders of this online business </p>
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/image0.jpeg"> 
+                    <img src="images/IMG_4097.jpg">
+                  <img src="images/image2.jpeg">
+                  </div>
+                </div>
+                <script>
+                 const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
+
+let currentIndex = 0;
+let translateValue = 0;
+
+function showImage(index) {
+  translateValue = -index * images[0].clientWidth;
+  carousel.style.transform = `translateX(${translateValue}px)`;
+}
+
+function handleNextClick() {
+  if (currentIndex === images.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  showImage(currentIndex);
+}
+
+function handlePrevClick() {
+  if (currentIndex === 0) {
+    currentIndex = images.length - 1;
+  } else {
+    currentIndex--;
+  }
+  showImage(currentIndex);
+}
+
+showImage(currentIndex);
+
+setInterval(() => {
+  handleNextClick();
+}, 3000);
+ 
+                </script>
+              </section>
+
+              <section class="meaning"> 
+                <h2> What the *** does Kamarka mean? </h2>
+                <p> Kamarka is an old-time Bulgarian word for a hole in the wall,where people used to put various objects on. We wanted our name to be different and to stand-out. Moreover, it relates to our aesthetic and our mission! </p>
+
+              </section>
+              <section class="mission">
+                <h3> Our Mission</h3>              
+                <p class="mission-paragraph"> Our mission is two-fold. Firstly, we would like to promote a more sustainable way to decorating your home or space by going away or minimising the use of traditional fresh flowers We truly belive that the hassle-free dry floral arrangements can provide the same beautiful effect, while lasting much, much longer. 
+                Second of all, if you look closely at the names of our products, you will notice something interesting. They are all named after Bulgarian customs, traditions or places in our native country. That way we hope to pique your interest about Bulgaria. We do believe that it has a lot to offer, but we are not happy with the way it's presented/ it is presenting itself on international level. We think that its potential as the next "hot" touristic spot is getting lost amongst various political scandals and instability within the country.
+                This is our way of showing what Bulgaria has to offer to the world! </p>
+              </section>             
+          
+          </nav>
+           
+            </header>
+    </body> 
+
+
 </html>
