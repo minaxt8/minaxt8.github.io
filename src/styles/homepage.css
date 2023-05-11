@@ -1,0 +1,149 @@
+html, body
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(241, 209, 196);
+       
+ }
+
+ head {
+    background-color: #383030;
+    color: white;
+    padding: 0.5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #977878;
+    color: white;
+    padding: 0.5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;  
+}
+.pampastype{ 
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dotted rgb(78, 94, 78);
+    display: flex;
+
+}
+
+.logo{
+    width: 200px;
+    border-radius: 10%;
+    border: 2px dotted rgb(78, 94, 78);
+    display: flex; 
+}
+
+.navicons{
+    width: 50px; 
+    border-radius: 15%;
+    border: 3px dotted chocolate;
+}  
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a,a:hover, a:visited{
+    color:rgb(134, 105, 95);
+    text-decoration:navajowhite; 
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-gap: 20px;
+}
+
+/* body {
+    background-color: lightsalmon;
+    display: grid; 
+    grid-template-rows: var(--header-height) auto var(--header-height)
+color: var(--text);
+} */
+
+body > header {
+    grid-row:1;
+}
+
+body> main {
+    grid-row:2;
+}
+
+body > footer {
+    grid-row: 3; 
+}
+
+body > main {
+    display: flex; 
+    flex-direction:column;
+    flex: 1 0 auto; 
+    min-width: 30ren; 
+    max-width: width 75%;
+    margin: 0 auto; 
+
+}
+body > footer	
+ .footer {
+			background-color: #333;
+			color: white;
+			padding: 0.5px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+
+        h1, h2, h3 {
+         color: #be3455;   
+        }
+
+    .hello {
+    width: 100%;
+    padding: 100px;
+    border-top: 2px solid #fe7678;
+    background-color: #f3d9d9;
+        }
+
+    .location {
+    width: 100%;
+    padding: 100px;
+    border-top: 2px solid #fe7678;
+    background-color: #f3d9d9;
+    }
+
+    .signpost {
+        text-align: center;
+        padding: 100px;
+    }
+
+    .pampastype {
+        display:inline-flexbox;
+        width: 300px;
+    }
+
+    header, .logo {
+        display:inline-block;
+        vertical-align: middle;
+      }
+
+      .logo {
+        width: 90px;
+      }
+      
+      h1 {
+        margin: 0;
+      }
+
+/* body > header , body > footer  */
+
